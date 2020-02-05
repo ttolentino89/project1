@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Make a Millenial</title>
+	<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway|Satisfy&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<header>
+		<h1>Hipster Maker</h1>
+	</header>
+
+	<nav>
+		<a id="home" onclick="location.reload()">Home</a>
+		<a id="start-game" onclick="hideInstructions()">Make New Millenial</a>
+		<a id="about">About</a>
+<!-- 		<a id="color-mode">Dark Mode</a> -->
+		<!-- <a id="dark-mode" onclick="document.body.style.backgroundColor = 'black'; document.body.style.color = 'white';">Dark Mode</a>
+		<a id="light-mode" onclick="document.body.style.backgroundColor = 'white'; document.body.style.color = 'black';">Light Mode</a> -->
+		<a id="genre">Random Genre</a>
+		<a href="mailto:awful.millenial@hipstermaker.com">Contact</a>
+	</nav>
+
+
+	<main>
+		<div class="fade-in" id="intro">
+		<h2>Hey y'all <i class="em em-wave" aria-role="presentation" aria-label="WAVING HAND SIGN"></i></h2>
+		<p>Welcome to the faux millenial maker, where everyone has better taste in music than you.</p>
+		<p>Seriously, like don't even try because “you’ve never heard of it anyway.”</p>
+			<p>Click below to get started!</p>
+		<br />
+			<button onclick="hideInstructions()"><i class="em em-fire" aria-role="presentation" aria-label="FIRE"></i>
+				Let's Go!
+				<i class="em em-100" aria-role="presentation" aria-label="HUNDRED POINTS SYMBOL"></i>
+			</button>
+		</div>
+		<div class="show-content"></div>
+	<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Who wants to be a millenialnaire? Not me.</p>
+  </div>
+</div>
+<div id="myModal2" class="modal">
+	<div class="modal-content">
+		<span class="close">&times;</span>
+		<p></p>
+</div>
+	</main>
+	<footer class="clearfix">
+		<p class="copyright">Unit 1 - February 2020</p>
+		<p class="message">SEI-NYC-Mandalorians</p>
+	</footer>
+	<script src="js/main.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>

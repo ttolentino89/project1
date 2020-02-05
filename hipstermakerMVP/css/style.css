@@ -1,0 +1,277 @@
+/* =============================
+GENERAL STYLES 
+================================ */
+body {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  background-image: url("vinylhipster.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* =============================
+TYPOGRAPHY
+================================ */
+
+h1, h2, h3, h4 {
+  color: white;
+}
+
+
+h1 {
+  font-size: 45px;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  font-family: 'Satisfy', cursive;
+}
+
+h2 {
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Satisfy', cursive;
+}
+
+p {
+  /* font-family: "Droid Serif", serif; */
+  font-family: "Raleway", sans-serif;
+  /* line-height: 26px; */
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .06em;
+  margin: 0 20px;
+  /* For hover style transition (bonus) */
+  /* border-bottom: 2px solid transparent; */
+  transition: all .3s ease-in-out;
+}
+
+a:hover {
+  border-bottom: 2px solid white;
+  font-family: 'Satisfy', cursive;
+  text-transform: none;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+button {
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  font-family: 'Satisfy', cursive;
+  font-size: 25px;
+}
+
+button:hover {
+  background-color: black;
+  border: white,
+}
+
+button:visited {
+  background: rgba(0, 0, 0, 0.5)
+}
+
+/* =============================
+HEADER
+================================ */
+header {
+  background-color: black;
+  padding: 30px 20px;
+}
+
+/* =============================
+NAV
+================================ */
+nav {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+/*  position: fixed;
+  text-align: center;
+  width: 100%;*/
+/*  scroll-behavior: auto;*/
+}
+
+/* =============================
+MAIN SECTIONS
+================================ */
+
+main {
+  width: 850px;
+  margin: 35px auto;
+}
+
+#intro {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  /* height: 500px;
+  width: 500px; */
+  /* border: white; */
+}
+
+/* =============================
+API CALL MANIPULATED SECTIONS
+================================ */
+
+/* #card {
+  background: rgba(0, 0, 0, 0.8);
+} */
+
+
+
+
+/* =============================
+IMAGES & ANIMATION
+================================ */
+img {
+  margin: 40px 8px 0;
+}
+
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+/* =============================
+FOOTER
+================================ */
+footer {
+  text-transform: uppercase;
+  padding: 0 20px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  letter-spacing: .08em;
+  font-weight: 500;
+
+}
+
+.copyright {
+  float: left;
+  font-family: "Raleway", sans-serif;
+}
+
+.message {
+  float: right;
+  font-family: "Raleway", sans-serif;
+  padding-right: 40px;
+}
+
+
+
+/* =============================
+MODAL
+================================ */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: black;
+  /* margin: 15% auto; 15% from the top and centered */
+  margin: auto;
+  padding: 20px;
+  /* border: 1px solid #888; */
+  width: 80%; /* Could be more or less, depending on screen size */
+  color:white;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
